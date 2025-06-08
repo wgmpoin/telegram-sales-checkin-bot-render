@@ -1,5 +1,6 @@
-python-telegram-bot[webhooks]==20.7
+python-telegram-bot==20.7  # Kembali ke versi tanpa [webhooks] karena kita akan install Flask sendiri
 gspread==5.12.4
 google-auth==2.40.2
+Flask==3.0.0[async]  # Ini WAJIB ada untuk Flask dan async
 oauth2client==4.0.0
-gunicorn==22.0.0  # Tambahkan baris ini kembali
+gunicorn==22.0.0     # Ini juga WAJIB ada karena Anda memanggilnya di Start Command
