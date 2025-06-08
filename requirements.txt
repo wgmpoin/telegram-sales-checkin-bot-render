@@ -1,6 +1,14 @@
-python-telegram-bot==20.7  # Kembali ke versi tanpa [webhooks] karena kita akan install Flask sendiri
+python-telegram-bot==20.7
 gspread==5.12.4
 google-auth==2.40.2
-Flask==3.0.0[async]  # Ini WAJIB ada untuk Flask dan async
+Flask==3.0.0
+Werkzeug==3.1.3 # Pastikan Werkzeug diinstal
+itsdangerous>=2.1.2 # Dependencies Flask yang umum
+Jinja2>=3.1.2 # Dependencies Flask yang umum
+click==8.2.1 # Dependencies Flask yang umum
+blinker>=1.6.2 # Dependencies Flask yang umum
 oauth2client==4.0.0
-gunicorn==22.0.0     # Ini juga WAJIB ada karena Anda memanggilnya di Start Command
+gunicorn==22.0.0
+# Tambahan untuk Async support yang biasanya dibutuhkan Flask
+# Python-Telegram-Bot 20.7 sudah membawa httpx yang akan tarik anyio, h11, dsb.
+# Jadi tidak perlu tambahkan secara eksplisit lagi
