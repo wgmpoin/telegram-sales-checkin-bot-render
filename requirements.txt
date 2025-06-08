@@ -1,6 +1,6 @@
-python-telegram-bot[webhooks]==20.7
+python-telegram-bot==20.7
 gspread==5.12.4
 google-auth==2.40.2
-Flask==3.0.0 # Tambahkan Flask dengan versi spesifik
 oauth2client==4.0.0
 gunicorn==22.0.0
+Flask # Biarkan tanpa versi spesifik di sini
