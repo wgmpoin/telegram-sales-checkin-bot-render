@@ -2,3 +2,4 @@ python-telegram-bot[webhooks]==20.7
 gspread==5.12.4
 google-auth==2.40.2
 oauth2client==4.0.0
+gunicorn==22.0.0  # Tambahkan baris ini kembali
